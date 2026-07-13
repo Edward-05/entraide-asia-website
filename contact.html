@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us — Entraide Asia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/logo-icon.png" type="image/png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark"><img src="assets/img/logo-icon.png" alt="Entraide Asia"></span> Entraide Asia</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="about.html">About <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">About Us</a>
+          <a href="mission.html">Our Mission</a>
+          <a href="leadership.html">Leadership</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="causes.html">Get Involved <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="causes.html">Causes</a>
+          <a href="projects.html">Projects</a>
+        </div>
+      </li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false">
+          <span class="flag">🇬🇧</span><span class="lang-label">EN</span><span class="caret">▾</span>
+        </button>
+        <div class="lang-dropdown">
+          <a href="contact.html" class="lang-option active"><span class="flag">🇬🇧</span> English</a>
+          <a href="fr/contact.html" class="lang-option"><span class="flag">🇫🇷</span> Français</a>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header section--dark">
+   <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact Us</div>
+    <span class="eyebrow">Get in Touch</span>
+    <h1>We'd love to hear from you.</h1>
+    <p style="max-width:620px; margin:0 auto;">Questions about our programs, volunteering or partnering with us? Reach out — a real person will respond within 1–2 business days.</p>
+   </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="grid grid-3" data-reveal style="margin-bottom:70px;">
+        <div class="info-card">
+          <div class="icon">✉</div>
+          <h3>Email Us</h3>
+          <p>General inquiries and program information.</p>
+          <strong>hello@entraide.org</strong>
+        </div>
+        <div class="info-card">
+          <div class="icon">☎</div>
+          <h3>Call Us</h3>
+          <p>Mon–Fri, 9:00 AM – 6:00 PM CET.</p>
+          <strong>+33 1 42 96 12 34</strong>
+        </div>
+        <div class="info-card">
+          <div class="icon">📍</div>
+          <h3>Visit Us</h3>
+          <p>Our headquarters office.</p>
+          <strong>149 Avenue du Maine, 75014 Paris, France</strong>
+        </div>
+      </div>
+
+      <div class="split">
+        <div data-reveal>
+          <span class="eyebrow">Send a Message</span>
+          <h2>Tell us how we can help</h2>
+          <form id="contact-form" class="form-grid" style="margin-top:26px;">
+            <div class="form-field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+            <div class="form-field full">
+              <label for="topic">I'm reaching out about</label>
+              <select id="topic" name="topic">
+                <option>Volunteering</option>
+                <option>Corporate partnership</option>
+                <option>Media / press inquiry</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+            </div>
+            <div class="form-field full">
+              <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="split-media" data-reveal>
+          <img src="https://picsum.photos/seed/contact-team/700/720" alt="Entraide team at the office">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">FAQ</span>
+        <h2>Quick answers</h2>
+      </div>
+      <div style="max-width:760px; margin:0 auto;" data-reveal>
+        <details class="accordion-item" open>
+          <summary>How quickly will I hear back?</summary>
+          <p>Our team responds to all inquiries within 1–2 business days, usually sooner.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>How can my company partner with Entraide?</summary>
+          <p>Reach out to our partnerships team to explore sponsorships, in-kind support, or program collaborations.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>Can I visit a project site in person?</summary>
+          <p>We occasionally organize site visits for partners and press. Reach out to our team to learn about upcoming trips.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/img/logo-full-tag.png" alt="Entraide Asia — Bringing light, creating hope" class="footer-logo-full">
+        <p style="color:#6C6155; max-width:280px;">A community & nonprofit foundation dedicated to transparent, locally-led humanitarian work.</p>
+      </div>
+      <div>
+        <h4>Organization</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="causes.html">Causes</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Guides & Reports</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Entraide Asia. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

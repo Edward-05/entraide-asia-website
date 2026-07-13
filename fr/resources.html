@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ressources — Entraide Asia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/img/logo-icon.png" type="image/png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark"><img src="../assets/img/logo-icon.png" alt="Entraide Asia"></span> Entraide Asia</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li class="nav-item"><a href="about.html">À propos <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">À propos de nous</a>
+          <a href="mission.html">Notre mission</a>
+          <a href="leadership.html">Direction</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="causes.html">S'impliquer <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="causes.html">Causes</a>
+          <a href="projects.html">Projets</a>
+        </div>
+      </li>
+      <li><a href="resources.html" class="active">Ressources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false">
+          <span class="flag">🇫🇷</span><span class="lang-label">FR</span><span class="caret">▾</span>
+        </button>
+        <div class="lang-dropdown">
+          <a href="../resources.html" class="lang-option"><span class="flag">🇬🇧</span> English</a>
+          <a href="resources.html" class="lang-option active"><span class="flag">🇫🇷</span> Français</a>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header section--dark">
+   <div class="container">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Ressources</div>
+    <span class="eyebrow">Ressources</span>
+    <h1>Rapports, guides et récits du terrain.</h1>
+    <p style="max-width:620px; margin:0 auto;">Tout ce qu'il faut savoir pour comprendre notre travail, nos finances et les communautés que nous servons.</p>
+   </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="filter-tabs" data-target="#resources-grid" data-reveal>
+        <button class="active" data-filter="all">Tout</button>
+        <button data-filter="reports">Rapports d'impact</button>
+        <button data-filter="guides">Guides</button>
+        <button data-filter="stories">Récits du terrain</button>
+      </div>
+
+      <div class="grid grid-3" id="resources-grid" data-reveal>
+        <article class="card" data-category="reports">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-1/500/360" alt="Rapport d'impact annuel"></div>
+          <div class="card-body">
+            <span class="tag">Rapport d'impact</span>
+            <h3>Rapport d'impact annuel 2025</h3>
+            <p>Un bilan complet des fonds recueillis, des programmes menés et des résultats mesurés l'an dernier.</p>
+            <a href="#" class="card-link">Télécharger le PDF →</a>
+          </div>
+        </article>
+        <article class="card" data-category="guides">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-2/500/360" alt="Guide de notre approche"></div>
+          <div class="card-body">
+            <span class="tag">Guide</span>
+            <h3>Un guide sur notre façon de travailler</h3>
+            <p>Comment nous évaluons les besoins, nous nous associons à des organisations locales et mesurons un impact durable.</p>
+            <a href="#" class="card-link">Lire le guide →</a>
+          </div>
+        </article>
+        <article class="card" data-category="stories">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-3/500/360" alt="Récit du terrain"></div>
+          <div class="card-body">
+            <span class="tag">Récit du terrain</span>
+            <h3>Comment une bourse a permis à une élève de rester à l'école</h3>
+            <p>Un témoignage direct de notre équipe à l'École du Bayon, au Cambodge.</p>
+            <a href="#" class="card-link">Lire le récit →</a>
+          </div>
+        </article>
+        <article class="card" data-category="guides">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-4/500/360" alt="Trousse média et presse"></div>
+          <div class="card-body">
+            <span class="tag">Guide</span>
+            <h3>Trousse média et presse</h3>
+            <p>Logos, photos et informations de base pour les journalistes qui couvrent notre travail.</p>
+            <a href="#" class="card-link">Télécharger la trousse →</a>
+          </div>
+        </article>
+        <article class="card" data-category="reports">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-5/500/360" alt="Audit financier"></div>
+          <div class="card-body">
+            <span class="tag">Rapport d'impact</span>
+            <h3>Audit financier indépendant — T2 2026</h3>
+            <p>Notre plus récent audit indépendant portant sur les dépenses de programmes et les frais généraux.</p>
+            <a href="#" class="card-link">Télécharger le PDF →</a>
+          </div>
+        </article>
+        <article class="card" data-category="stories">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-6/500/360" alt="Récit de bénévole"></div>
+          <div class="card-body">
+            <span class="tag">Récit du terrain</span>
+            <h3>Rencontrez les enseignants de Living Grace</h3>
+            <p>Un aperçu de nos salles de formation aux compétences en Thaïlande.</p>
+            <a href="#" class="card-link">Lire le récit →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions fréquentes sur notre travail</h2>
+      </div>
+      <div style="max-width:760px; margin:0 auto;" data-reveal>
+        <details class="accordion-item" open>
+          <summary>Comment Entraide est-elle financée?</summary>
+          <p>Entraide est financée par un ensemble de subventions de fondations, de partenariats corporatifs et de sympathisants individuels, avec toutes les finances divulguées dans nos audits trimestriels.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>Comment choisissez-vous les communautés avec qui travailler?</summary>
+          <p>Nous nous associons à des communautés qui nous invitent, en priorisant les endroits où des organisations locales dirigent déjà la réponse.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>Entraide est-elle un organisme à but non lucratif enregistré?</summary>
+          <p>Oui — Entraide Asia est une association à but non lucratif (loi 1901) basée en France.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>À quelle fréquence publiez-vous des rapports d'impact?</summary>
+          <p>Nous publions des rapports financiers et de programmes audités de façon indépendante chaque trimestre, disponibles sur cette page Ressources.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="../assets/img/logo-full-tag.png" alt="Entraide Asia — Bringing light, creating hope" class="footer-logo-full">
+        <p style="color:#6C6155; max-width:280px;">Une fondation communautaire à but non lucratif dédiée à un travail humanitaire transparent et dirigé localement.</p>
+      </div>
+      <div>
+        <h4>Organisation</h4>
+        <ul>
+          <li><a href="about.html">À propos de nous</a></li>
+          <li><a href="mission.html">Notre mission</a></li>
+          <li><a href="leadership.html">Direction</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>S'impliquer</h4>
+        <ul>
+          <li><a href="causes.html">Causes</a></li>
+          <li><a href="projects.html">Projets</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ressources</h4>
+        <ul>
+          <li><a href="resources.html">Guides et rapports</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Entraide Asia. Tous droits réservés.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>
