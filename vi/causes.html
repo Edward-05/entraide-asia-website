@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Các dự án — Entraide Asia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/img/logo-icon.png" type="image/png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark"><img src="../assets/img/logo-icon.png" alt="Entraide Asia"></span> Entraide Asia</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li class="nav-item"><a href="about.html">Giới thiệu <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">Về chúng tôi</a>
+          <a href="mission.html">Sứ mệnh</a>
+          <a href="founder.html">Người sáng lập</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="causes.html" class="active">Tham gia <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="causes.html">Các dự án</a>
+          <a href="projects.html">Trường đối tác</a>
+        </div>
+      </li>
+      <li><a href="resources.html">Tài liệu</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false">
+          <span class="flag">🇻🇳</span><span class="lang-label">VI</span><span class="caret">▾</span>
+        </button>
+        <div class="lang-dropdown">
+          <a href="../causes.html" class="lang-option"><span class="flag">🇬🇧</span> English</a>
+          <a href="../fr/causes.html" class="lang-option"><span class="flag">🇫🇷</span> Français</a>
+          <a href="causes.html" class="lang-option active"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+          <a href="../th/causes.html" class="lang-option"><span class="flag">🇹🇭</span> ภาษาไทย</a>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header section--dark">
+   <div class="container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Các dự án</div>
+    <span class="eyebrow">Các dự án đang triển khai</span>
+    <h1>Hỗ trợ học sinh, trường học và trẻ em khuyết tật.</h1>
+    <p style="max-width:620px; margin:0 auto;">Entraide Asia tập trung vào một điều duy nhất: giúp trẻ em và học sinh tại Việt Nam, Campuchia, Thái Lan và Myanmar được tiếp tục đến trường. Đây là cách chúng tôi thực hiện.</p>
+   </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="filter-tabs" data-target="#causes-grid" data-reveal>
+        <button class="active" data-filter="all">Tất cả dự án</button>
+        <button data-filter="schools">Hỗ trợ trường học</button>
+        <button data-filter="disability">Giáo dục cho trẻ khuyết tật</button>
+        <button data-filter="scholarships">Học bổng</button>
+      </div>
+
+      <div class="grid grid-3" id="causes-grid" data-reveal>
+        <article class="card" data-category="schools">
+          <div class="card-media"><img src="https://picsum.photos/seed/cause-school-1/500/360" alt="Hỗ trợ trường học nhỏ"></div>
+          <div class="card-body">
+            <span class="tag">Hỗ trợ trường học</span>
+            <h3>Xây dựng & Hỗ trợ các trường học nhỏ</h3>
+            <p>Giúp các trường học nhỏ do địa phương điều hành duy trì hoạt động nhờ vật dụng cơ bản, cơ sở vật chất và hỗ trợ giáo viên.</p>
+            <a href="contact.html" class="card-link">Tìm hiểu thêm →</a>
+          </div>
+        </article>
+        <article class="card" data-category="disability">
+          <div class="card-media"><img src="https://picsum.photos/seed/cause-disability-1/500/360" alt="Giáo dục cho trẻ em khuyết tật"></div>
+          <div class="card-body">
+            <span class="tag">Giáo dục cho trẻ khuyết tật</span>
+            <h3>Giáo dục cho trẻ em khuyết tật</h3>
+            <p>Đảm bảo trẻ em khuyết tật được tiếp cận lớp học, trị liệu và chăm sóc chuyên biệt cùng với các bạn đồng trang lứa.</p>
+            <a href="contact.html" class="card-link">Tìm hiểu thêm →</a>
+          </div>
+        </article>
+        <article class="card" data-category="scholarships">
+          <div class="card-media"><img src="https://picsum.photos/seed/cause-scholarship-1/500/360" alt="Học bổng cho học sinh có hoàn cảnh khó khăn"></div>
+          <div class="card-body">
+            <span class="tag">Học bổng</span>
+            <h3>Học bổng cho học sinh có hoàn cảnh khó khăn</h3>
+            <p>Chi trả học phí, sách vở và chi phí sinh hoạt hằng ngày để những học sinh có tiềm năng không phải bỏ học giữa chừng.</p>
+            <a href="contact.html" class="card-link">Tìm hiểu thêm →</a>
+          </div>
+        </article>
+        <article class="card" data-category="schools">
+          <div class="card-media"><img src="https://picsum.photos/seed/cause-school-2/500/360" alt="Vật dụng lớp học và hỗ trợ giáo viên"></div>
+          <div class="card-body">
+            <span class="tag">Hỗ trợ trường học</span>
+            <h3>Vật dụng lớp học & Hỗ trợ giáo viên</h3>
+            <p>Cung cấp sách vở, vật dụng và đào tạo để giáo viên có thể dành cho mỗi học sinh sự quan tâm mà các em xứng đáng nhận được.</p>
+            <a href="contact.html" class="card-link">Tìm hiểu thêm →</a>
+          </div>
+        </article>
+        <article class="card" data-category="disability">
+          <div class="card-media"><img src="https://picsum.photos/seed/cause-disability-2/500/360" alt="Đào tạo nghề cho thanh niên"></div>
+          <div class="card-body">
+            <span class="tag">Giáo dục cho trẻ khuyết tật</span>
+            <h3>Đào tạo nghề cho thanh niên</h3>
+            <p>Giúp học sinh lớn tuổi và thanh niên khuyết tật xây dựng các kỹ năng thực tế để sống tự lập.</p>
+            <a href="contact.html" class="card-link">Tìm hiểu thêm →</a>
+          </div>
+        </article>
+        <article class="card" data-category="scholarships">
+          <div class="card-media"><img src="https://picsum.photos/seed/cause-scholarship-2/500/360" alt="Duy trì việc học lâu dài cho học sinh"></div>
+          <div class="card-body">
+            <span class="tag">Học bổng</span>
+            <h3>Duy trì việc học lâu dài cho học sinh</h3>
+            <p>Hỗ trợ nhiều năm để học sinh có thể tiếp tục học tập cho đến hết bậc trung học và xa hơn nữa.</p>
+            <a href="contact.html" class="card-link">Tìm hiểu thêm →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" style="margin-bottom:110px;">
+    <div class="cta-banner" data-reveal>
+      <div>
+        <span class="eyebrow">Bạn muốn tìm hiểu thêm?</span>
+        <h2>Trao đổi với đội ngũ của chúng tôi về công việc chúng tôi đang thực hiện.</h2>
+        <p>Liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi nào về các chương trình và ưu tiên của chúng tôi.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-light">Liên hệ</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="../assets/img/logo-full-tag.png" alt="Entraide Asia — Bringing light, creating hope" class="footer-logo-full">
+        <p style="color:#6C6155; max-width:280px;">Một quỹ cộng đồng phi lợi nhuận hoạt động minh bạch và do địa phương dẫn dắt.</p>
+      </div>
+      <div>
+        <h4>Tổ chức</h4>
+        <ul>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="mission.html">Sứ mệnh</a></li>
+          <li><a href="founder.html">Người sáng lập</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tham gia</h4>
+        <ul>
+          <li><a href="causes.html">Các dự án</a></li>
+          <li><a href="projects.html">Trường đối tác</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tài liệu</h4>
+        <ul>
+          <li><a href="resources.html">Hướng dẫn & Báo cáo</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="contact.html">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Entraide Asia. Bảo lưu mọi quyền.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

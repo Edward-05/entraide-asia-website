@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liên hệ — Entraide Asia</title>
+<meta name="description" content="Liên hệ với Entraide Asia để biết thêm về các chương trình, cơ hội tình nguyện hoặc hợp tác với chúng tôi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/img/logo-icon.png" type="image/png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark"><img src="../assets/img/logo-icon.png" alt="Entraide Asia"></span> Entraide Asia</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li class="nav-item"><a href="about.html">Giới thiệu <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">Về chúng tôi</a>
+          <a href="mission.html">Sứ mệnh</a>
+          <a href="founder.html">Người sáng lập</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="causes.html">Tham gia <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="causes.html">Các dự án</a>
+          <a href="projects.html">Trường đối tác</a>
+        </div>
+      </li>
+      <li><a href="resources.html">Tài liệu</a></li>
+      <li><a href="contact.html" class="active">Liên hệ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false">
+          <span class="flag">🇻🇳</span><span class="lang-label">VI</span><span class="caret">▾</span>
+        </button>
+        <div class="lang-dropdown">
+          <a href="../contact.html" class="lang-option"><span class="flag">🇬🇧</span> English</a>
+          <a href="../fr/contact.html" class="lang-option"><span class="flag">🇫🇷</span> Français</a>
+          <a href="contact.html" class="lang-option active"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+          <a href="../th/contact.html" class="lang-option"><span class="flag">🇹🇭</span> ภาษาไทย</a>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header section--dark">
+   <div class="container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Liên hệ</div>
+    <span class="eyebrow">Kết nối với chúng tôi</span>
+    <h1>Chúng tôi rất mong được lắng nghe bạn.</h1>
+    <p style="max-width:620px; margin:0 auto;">Bạn có câu hỏi về các chương trình, việc tình nguyện hay hợp tác với chúng tôi? Hãy liên hệ — một người thật sẽ phản hồi trong vòng 1–2 ngày làm việc.</p>
+   </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="grid grid-3" data-reveal style="margin-bottom:70px;">
+        <div class="info-card">
+          <div class="icon">✉</div>
+          <h3>Gửi Email</h3>
+          <p>Các câu hỏi chung và thông tin về chương trình.</p>
+          <strong>hello@entraide.org</strong>
+        </div>
+        <div class="info-card">
+          <div class="icon">☎</div>
+          <h3>Gọi cho chúng tôi</h3>
+          <p>Thứ Hai – Thứ Sáu, 9:00 – 18:00 (giờ CET).</p>
+          <strong>+33 1 42 96 12 34</strong>
+        </div>
+        <div class="info-card">
+          <div class="icon">📍</div>
+          <h3>Ghé thăm chúng tôi</h3>
+          <p>Văn phòng trụ sở chính của chúng tôi.</p>
+          <strong>149 Avenue du Maine, 75014 Paris, France</strong>
+        </div>
+      </div>
+
+      <div class="split">
+        <div data-reveal>
+          <span class="eyebrow">Gửi tin nhắn</span>
+          <h2>Hãy cho chúng tôi biết chúng tôi có thể giúp gì</h2>
+          <form id="contact-form" class="form-grid" style="margin-top:26px;">
+            <div class="form-field">
+              <label for="name">Họ và tên</label>
+              <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Địa chỉ Email</label>
+              <input type="email" id="email" name="email" placeholder="vana@example.com" required>
+            </div>
+            <div class="form-field full">
+              <label for="topic">Tôi liên hệ về vấn đề</label>
+              <select id="topic" name="topic">
+                <option>Tình nguyện</option>
+                <option>Hợp tác doanh nghiệp</option>
+                <option>Yêu cầu truyền thông / báo chí</option>
+                <option>Vấn đề khác</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="message">Tin nhắn</label>
+              <textarea id="message" name="message" placeholder="Chúng tôi có thể giúp gì cho bạn?" required></textarea>
+            </div>
+            <div class="form-field full">
+              <button type="submit" class="btn btn-primary" style="width:100%;">Gửi tin nhắn</button>
+            </div>
+          </form>
+        </div>
+        <div class="split-media" data-reveal>
+          <img src="https://picsum.photos/seed/contact-team/700/720" alt="Đội ngũ Entraide tại văn phòng">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Câu hỏi thường gặp</span>
+        <h2>Giải đáp nhanh</h2>
+      </div>
+      <div style="max-width:760px; margin:0 auto;" data-reveal>
+        <details class="accordion-item" open>
+          <summary>Tôi sẽ nhận được phản hồi trong bao lâu?</summary>
+          <p>Đội ngũ của chúng tôi phản hồi mọi yêu cầu trong vòng 1–2 ngày làm việc, thường là sớm hơn.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>Công ty của tôi có thể hợp tác với Entraide như thế nào?</summary>
+          <p>Hãy liên hệ với đội ngũ hợp tác của chúng tôi để tìm hiểu về tài trợ, hỗ trợ hiện vật hoặc hợp tác chương trình.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>Tôi có thể đến thăm trực tiếp một địa điểm dự án không?</summary>
+          <p>Chúng tôi thỉnh thoảng tổ chức các chuyến tham quan thực địa cho đối tác và báo chí. Hãy liên hệ với đội ngũ của chúng tôi để biết về các chuyến đi sắp tới.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="../assets/img/logo-full-tag.png" alt="Entraide Asia — Bringing light, creating hope" class="footer-logo-full">
+        <p style="color:#6C6155; max-width:280px;">Một quỹ cộng đồng phi lợi nhuận hoạt động minh bạch và do địa phương dẫn dắt.</p>
+      </div>
+      <div>
+        <h4>Tổ chức</h4>
+        <ul>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="mission.html">Sứ mệnh</a></li>
+          <li><a href="founder.html">Người sáng lập</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tham gia</h4>
+        <ul>
+          <li><a href="causes.html">Các dự án</a></li>
+          <li><a href="projects.html">Trường đối tác</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tài liệu</h4>
+        <ul>
+          <li><a href="resources.html">Hướng dẫn & Báo cáo</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="contact.html">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Entraide Asia. Bảo lưu mọi quyền.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

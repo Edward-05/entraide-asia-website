@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tài liệu — Entraide Asia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/img/logo-icon.png" type="image/png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark"><img src="../assets/img/logo-icon.png" alt="Entraide Asia"></span> Entraide Asia</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li class="nav-item"><a href="about.html">Giới thiệu <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">Về chúng tôi</a>
+          <a href="mission.html">Sứ mệnh</a>
+          <a href="founder.html">Người sáng lập</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="causes.html">Tham gia <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="causes.html">Các dự án</a>
+          <a href="projects.html">Trường đối tác</a>
+        </div>
+      </li>
+      <li><a href="resources.html" class="active">Tài liệu</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false">
+          <span class="flag">🇻🇳</span><span class="lang-label">VI</span><span class="caret">▾</span>
+        </button>
+        <div class="lang-dropdown">
+          <a href="../resources.html" class="lang-option"><span class="flag">🇬🇧</span> English</a>
+          <a href="../fr/resources.html" class="lang-option"><span class="flag">🇫🇷</span> Français</a>
+          <a href="resources.html" class="lang-option active"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+          <a href="../th/resources.html" class="lang-option"><span class="flag">🇹🇭</span> ภาษาไทย</a>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header section--dark">
+   <div class="container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Tài liệu</div>
+    <span class="eyebrow">Tài liệu</span>
+    <h1>Báo cáo, hướng dẫn và câu chuyện từ thực địa.</h1>
+    <p style="max-width:620px; margin:0 auto;">Mọi thứ bạn cần để hiểu về công việc, tài chính và các cộng đồng mà chúng tôi phục vụ.</p>
+   </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="filter-tabs" data-target="#resources-grid" data-reveal>
+        <button class="active" data-filter="all">Tất cả</button>
+        <button data-filter="reports">Báo cáo tác động</button>
+        <button data-filter="guides">Hướng dẫn</button>
+        <button data-filter="stories">Câu chuyện thực địa</button>
+      </div>
+
+      <div class="grid grid-3" id="resources-grid" data-reveal>
+        <article class="card" data-category="reports">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-1/500/360" alt="Báo cáo tác động thường niên"></div>
+          <div class="card-body">
+            <span class="tag">Báo cáo tác động</span>
+            <h3>Báo cáo tác động thường niên 2025</h3>
+            <p>Bảng tổng hợp đầy đủ về quỹ huy động, các chương trình đã triển khai và kết quả đo lường được trong năm qua.</p>
+            <a href="#" class="card-link">Tải PDF →</a>
+          </div>
+        </article>
+        <article class="card" data-category="guides">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-2/500/360" alt="Hướng dẫn về cách tiếp cận của chúng tôi"></div>
+          <div class="card-body">
+            <span class="tag">Hướng dẫn</span>
+            <h3>Hướng dẫn về cách chúng tôi làm việc</h3>
+            <p>Cách chúng tôi đánh giá nhu cầu, hợp tác với các tổ chức địa phương và đo lường tác động lâu dài.</p>
+            <a href="#" class="card-link">Đọc hướng dẫn →</a>
+          </div>
+        </article>
+        <article class="card" data-category="stories">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-3/500/360" alt="Câu chuyện thực địa"></div>
+          <div class="card-body">
+            <span class="tag">Câu chuyện thực địa</span>
+            <h3>Học bổng đã giúp một học sinh tiếp tục đến trường như thế nào</h3>
+            <p>Câu chuyện trực tiếp từ đội ngũ của chúng tôi tại Trường Bayon ở Campuchia.</p>
+            <a href="#" class="card-link">Đọc câu chuyện →</a>
+          </div>
+        </article>
+        <article class="card" data-category="guides">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-4/500/360" alt="Bộ tài liệu truyền thông và báo chí"></div>
+          <div class="card-body">
+            <span class="tag">Hướng dẫn</span>
+            <h3>Bộ tài liệu Truyền thông & Báo chí</h3>
+            <p>Logo, hình ảnh và thông tin nền dành cho các nhà báo đưa tin về công việc của chúng tôi.</p>
+            <a href="#" class="card-link">Tải bộ tài liệu →</a>
+          </div>
+        </article>
+        <article class="card" data-category="reports">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-5/500/360" alt="Kiểm toán tài chính"></div>
+          <div class="card-body">
+            <span class="tag">Báo cáo tác động</span>
+            <h3>Kiểm toán tài chính độc lập Quý 2 năm 2026</h3>
+            <p>Báo cáo kiểm toán độc lập mới nhất của chúng tôi, bao gồm chi tiêu chương trình và chi phí vận hành.</p>
+            <a href="#" class="card-link">Tải PDF →</a>
+          </div>
+        </article>
+        <article class="card" data-category="stories">
+          <div class="card-media"><img src="https://picsum.photos/seed/res-6/500/360" alt="Câu chuyện tình nguyện viên"></div>
+          <div class="card-body">
+            <span class="tag">Câu chuyện thực địa</span>
+            <h3>Gặp gỡ các giáo viên tại Living Grace</h3>
+            <p>Cái nhìn cận cảnh vào các lớp đào tạo kỹ năng của chúng tôi tại Thái Lan.</p>
+            <a href="#" class="card-link">Đọc câu chuyện →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Câu hỏi thường gặp</span>
+        <h2>Những câu hỏi thường gặp về công việc của chúng tôi</h2>
+      </div>
+      <div style="max-width:760px; margin:0 auto;" data-reveal>
+        <details class="accordion-item" open>
+          <summary>Entraide được tài trợ như thế nào?</summary>
+          <p>Entraide được tài trợ thông qua sự kết hợp giữa các khoản tài trợ từ quỹ, quan hệ đối tác doanh nghiệp và những người ủng hộ cá nhân, với toàn bộ tình hình tài chính được công bố trong các cuộc kiểm toán hàng quý của chúng tôi.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>Bạn chọn cộng đồng để làm việc cùng như thế nào?</summary>
+          <p>Chúng tôi hợp tác với các cộng đồng chủ động mời chúng tôi tham gia, ưu tiên những nơi mà các tổ chức địa phương đã và đang dẫn dắt công tác ứng phó.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>Entraide có phải là một tổ chức phi lợi nhuận đã đăng ký không?</summary>
+          <p>Có — Entraide Asia là một hiệp hội phi lợi nhuận đã đăng ký (loi 1901) có trụ sở tại Pháp.</p>
+        </details>
+        <details class="accordion-item">
+          <summary>Bạn báo cáo tác động thường xuyên như thế nào?</summary>
+          <p>Chúng tôi công bố các báo cáo tài chính và chương trình được kiểm toán độc lập mỗi quý, có sẵn trên trang Tài liệu này.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="../assets/img/logo-full-tag.png" alt="Entraide Asia — Bringing light, creating hope" class="footer-logo-full">
+        <p style="color:#6C6155; max-width:280px;">Một quỹ cộng đồng phi lợi nhuận hoạt động minh bạch và do địa phương dẫn dắt.</p>
+      </div>
+      <div>
+        <h4>Tổ chức</h4>
+        <ul>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="mission.html">Sứ mệnh</a></li>
+          <li><a href="founder.html">Người sáng lập</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tham gia</h4>
+        <ul>
+          <li><a href="causes.html">Các dự án</a></li>
+          <li><a href="projects.html">Trường đối tác</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tài liệu</h4>
+        <ul>
+          <li><a href="resources.html">Hướng dẫn & Báo cáo</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="contact.html">Câu hỏi thường gặp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Entraide Asia. Bảo lưu mọi quyền.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

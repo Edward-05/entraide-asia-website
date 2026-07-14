@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ติดต่อเรา — Entraide Asia</title>
+<meta name="description" content="ติดต่อ Entraide Asia เพื่อสอบถามข้อมูลเกี่ยวกับโครงการ การเป็นอาสาสมัคร หรือการร่วมเป็นพันธมิตรกับเรา">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/img/logo-icon.png" type="image/png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark"><img src="../assets/img/logo-icon.png" alt="Entraide Asia"></span> Entraide Asia</a>
+    <ul class="nav-links">
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li class="nav-item"><a href="about.html">เกี่ยวกับเรา <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="about.html">เกี่ยวกับเรา</a>
+          <a href="mission.html">พันธกิจของเรา</a>
+          <a href="founder.html">ผู้ก่อตั้งของเรา</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="causes.html">ร่วมสนับสนุน <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="causes.html">โครงการที่สนับสนุน</a>
+          <a href="projects.html">โรงเรียนพันธมิตร</a>
+        </div>
+      </li>
+      <li><a href="resources.html">แหล่งข้อมูล</a></li>
+      <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false">
+          <span class="flag">🇹🇭</span><span class="lang-label">TH</span><span class="caret">▾</span>
+        </button>
+        <div class="lang-dropdown">
+          <a href="../contact.html" class="lang-option"><span class="flag">🇬🇧</span> English</a>
+          <a href="../fr/contact.html" class="lang-option"><span class="flag">🇫🇷</span> Français</a>
+          <a href="../vi/contact.html" class="lang-option"><span class="flag">🇻🇳</span> Tiếng Việt</a>
+          <a href="contact.html" class="lang-option active"><span class="flag">🇹🇭</span> ภาษาไทย</a>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header section--dark">
+   <div class="container">
+    <div class="breadcrumb"><a href="index.html">หน้าแรก</a> / ติดต่อเรา</div>
+    <span class="eyebrow">ติดต่อเรา</span>
+    <h1>เรายินดีรับฟังคุณ</h1>
+    <p style="max-width:620px; margin:0 auto;">มีคำถามเกี่ยวกับโครงการ การเป็นอาสาสมัคร หรือการเป็นพันธมิตรกับเราหรือไม่? ติดต่อเราได้เลย — เจ้าหน้าที่จริงจะตอบกลับภายใน 1–2 วันทำการ</p>
+   </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="grid grid-3" data-reveal style="margin-bottom:70px;">
+        <div class="info-card">
+          <div class="icon">✉</div>
+          <h3>ส่งอีเมลถึงเรา</h3>
+          <p>สอบถามข้อมูลทั่วไปและรายละเอียดโครงการ</p>
+          <strong>hello@entraide.org</strong>
+        </div>
+        <div class="info-card">
+          <div class="icon">☎</div>
+          <h3>โทรหาเรา</h3>
+          <p>จันทร์–ศุกร์ 9:00 – 18:00 น. (เวลา CET)</p>
+          <strong>+33 1 42 96 12 34</strong>
+        </div>
+        <div class="info-card">
+          <div class="icon">📍</div>
+          <h3>เยี่ยมชมเรา</h3>
+          <p>สำนักงานใหญ่ของเรา</p>
+          <strong>149 Avenue du Maine, 75014 Paris, France</strong>
+        </div>
+      </div>
+
+      <div class="split">
+        <div data-reveal>
+          <span class="eyebrow">ส่งข้อความ</span>
+          <h2>บอกเราว่าเราจะช่วยอะไรคุณได้บ้าง</h2>
+          <form id="contact-form" class="form-grid" style="margin-top:26px;">
+            <div class="form-field">
+              <label for="name">ชื่อ-นามสกุล</label>
+              <input type="text" id="name" name="name" placeholder="สมชาย ใจดี" required>
+            </div>
+            <div class="form-field">
+              <label for="email">ที่อยู่อีเมล</label>
+              <input type="email" id="email" name="email" placeholder="somchai@example.com" required>
+            </div>
+            <div class="form-field full">
+              <label for="topic">ฉันติดต่อมาเกี่ยวกับ</label>
+              <select id="topic" name="topic">
+                <option>งานอาสาสมัคร</option>
+                <option>พันธมิตรองค์กร</option>
+                <option>สอบถามสื่อ / สื่อมวลชน</option>
+                <option>เรื่องอื่นๆ</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="message">ข้อความ</label>
+              <textarea id="message" name="message" placeholder="เราช่วยอะไรคุณได้บ้าง?" required></textarea>
+            </div>
+            <div class="form-field full">
+              <button type="submit" class="btn btn-primary" style="width:100%;">ส่งข้อความ</button>
+            </div>
+          </form>
+        </div>
+        <div class="split-media" data-reveal>
+          <img src="https://picsum.photos/seed/contact-team/700/720" alt="ทีมงาน Entraide ที่สำนักงาน">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">คำถามที่พบบ่อย</span>
+        <h2>คำตอบด่วน</h2>
+      </div>
+      <div style="max-width:760px; margin:0 auto;" data-reveal>
+        <details class="accordion-item" open>
+          <summary>เราจะได้รับคำตอบเร็วแค่ไหน?</summary>
+          <p>ทีมงานของเราจะตอบกลับทุกคำถามภายใน 1–2 วันทำการ ซึ่งมักจะเร็วกว่านั้น</p>
+        </details>
+        <details class="accordion-item">
+          <summary>บริษัทของฉันจะร่วมเป็นพันธมิตรกับ Entraide ได้อย่างไร?</summary>
+          <p>ติดต่อทีมพันธมิตรของเราเพื่อพูดคุยเกี่ยวกับการสนับสนุน การให้ความช่วยเหลือในรูปแบบสิ่งของ หรือความร่วมมือด้านโครงการ</p>
+        </details>
+        <details class="accordion-item">
+          <summary>ฉันสามารถไปเยี่ยมชมพื้นที่โครงการด้วยตนเองได้หรือไม่?</summary>
+          <p>เราจัดทริปเยี่ยมชมพื้นที่ให้กับพันธมิตรและสื่อมวลชนเป็นครั้งคราว ติดต่อทีมงานของเราเพื่อดูรายละเอียดการเดินทางที่กำลังจะมาถึง</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="../assets/img/logo-full-tag.png" alt="Entraide Asia — Bringing light, creating hope" class="footer-logo-full">
+        <p style="color:#6C6155; max-width:280px;">มูลนิธิชุมชนไม่แสวงหากำไรที่มุ่งมั่นทำงานด้านมนุษยธรรมอย่างโปร่งใสและนำโดยท้องถิ่น</p>
+      </div>
+      <div>
+        <h4>องค์กร</h4>
+        <ul>
+          <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="mission.html">พันธกิจของเรา</a></li>
+          <li><a href="founder.html">ผู้ก่อตั้งของเรา</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>ร่วมสนับสนุน</h4>
+        <ul>
+          <li><a href="causes.html">โครงการที่สนับสนุน</a></li>
+          <li><a href="projects.html">โรงเรียนพันธมิตร</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>แหล่งข้อมูล</h4>
+        <ul>
+          <li><a href="resources.html">คู่มือและรายงาน</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+          <li><a href="contact.html">คำถามที่พบบ่อย</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Entraide Asia สงวนลิขสิทธิ์</span>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="X / Twitter">X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>
