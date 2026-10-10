@@ -553,32 +553,30 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 .section--dark .info-card p { color: #C9DAD5; }
 .section--dark .info-card strong { color: #fff; }
 
-/* --- Footer (light, so the transparent navy logo mark stays visible) ----- */
-.site-footer { background: var(--color-bg-alt); color: var(--color-text-muted); padding: 90px 0 30px; }
+/* --- Footer (light, so the transparent navy logo mark stays visible) -----
+   Chỉnh khoảng cách footer tại đây:
+   - .site-footer padding : khoảng trống trên/dưới toàn footer
+   - .footer-grid gap     : khoảng cách giữa các cột
+   - .footer-grid li      : khoảng cách giữa các dòng liên kết                */
+.site-footer { background: var(--color-bg-alt); color: var(--color-text-muted); padding: 44px 0 18px; }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr repeat(3, 1fr);
-  gap: 50px;
-  padding-bottom: 60px;
+  grid-template-columns: 1.3fr repeat(3, 1fr);
+  gap: 32px;
+  padding-bottom: 28px;
   border-bottom: 1px solid var(--color-border);
 }
-.footer-grid h4 { color: var(--color-navy); font-size: 1rem; margin-bottom: 20px; }
-.footer-grid li { margin-bottom: 12px; }
+.footer-grid h4 { color: var(--color-navy); font-size: 1rem; margin-bottom: 12px; }
+.footer-grid li { margin-bottom: 8px; }
 .footer-grid a { color: var(--color-text-muted); transition: color 0.2s ease; }
 .footer-grid a:hover { color: var(--color-navy); }
-.footer-logo { color: var(--color-navy); font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
-.footer-logo-full { width: 190px; height: auto; margin-bottom: 18px; }
+.footer-grid p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
+.footer-logo { color: var(--color-navy); font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+.footer-logo-full { width: 150px; height: auto; margin-bottom: 12px; }
 .footer-bottom {
-  display: flex; justify-content: space-between; align-items: center;
-  padding-top: 26px; font-size: 0.85rem; flex-wrap: wrap; gap: 12px;
+  display: flex; justify-content: center; align-items: center;
+  padding-top: 16px; font-size: 0.85rem; flex-wrap: wrap; gap: 8px;
 }
-.footer-social { display: flex; gap: 10px; }
-.footer-social a {
-  width: 36px; height: 36px; border-radius: 50%; background: rgba(4, 43, 78, 0.08);
-  color: var(--color-navy);
-  display: flex; align-items: center; justify-content: center;
-}
-.footer-social a:hover { background: rgba(4, 43, 78, 0.16); }
 
 /* --- Page header (inner pages) ------------------------------------------- */
 .page-header { padding: 56px 0 44px; text-align: center; }
@@ -664,7 +662,8 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .stats-strip { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
   .cta-banner { flex-direction: column; text-align: center; padding: 50px 30px; }
   .cta-actions { justify-content: center; }
   .form-grid { grid-template-columns: 1fr; }
@@ -676,6 +675,10 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
   .section { padding: var(--space-section-mobile) 0; }
   .container { padding: 0 20px; }
   .section-head { flex-direction: column; align-items: flex-start; }
+  .site-footer { padding: 32px 0 16px; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 16px; padding-bottom: 20px; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
+  .footer-grid > div:last-child { grid-column: 1 / -1; }
 }
 
 /* --- Tiêu đề bài news (story pages) -------------------------------------
