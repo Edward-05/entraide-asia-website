@@ -681,3 +681,13 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 .story-title { max-width: 860px; margin-left: auto; margin-right: auto; font-size: clamp(2rem, 4.2vw, 3.1rem); line-height: 1.18; text-wrap: balance; }
 .story-title .title-lead { display: block; margin-bottom: 10px; color: #fff; font-size: 0.82em; letter-spacing: 0.01em; }
 .story-title .title-rest { display: block; text-wrap: balance; }
+
+/* --- Câu trích dẫn trong bài news ----------------------------------------
+   HTML: <blockquote class="story-quote">“Câu trích”<footer>— Tên</footer></blockquote>
+   - font-size    : cỡ chữ câu trích (nhỏ hơn => ít dòng hơn)
+   - max-width    : độ rộng khối chữ; text-wrap:balance chia đều các dòng,
+                    không để một chữ lẻ ở dòng cuối
+   - border-left  : thanh màu cam bên trái (màu/độ dày)
+   - margin       : khoảng cách phía trên/dưới câu trích                     */
+.story-quote { margin: 32px 0; padding: 6px 0 6px 24px; border-left: 4px solid var(--color-primary); font-family: var(--font-display); font-size: clamp(1.25rem, 2.4vw, 1.55rem); line-height: 1.5; max-width: 640px; text-wrap: balance; }
+.story-quote footer { margin-top: 12px; font-family: var(--font-body); font-size: 0.9rem; line-height: 1.4; color: var(--color-text-muted); text-wrap: wrap; }
