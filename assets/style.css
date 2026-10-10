@@ -712,3 +712,11 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 .hero-slides img { position: absolute; inset: 0; opacity: 0; transform: scale(1.04); transition: opacity var(--hero-fade) ease-out, transform 4s ease-out; }
 .hero-slides img.is-active { opacity: 1; transform: scale(1); }
 @media (prefers-reduced-motion: reduce) { .hero-slides img { transition: none; transform: none; } }
+
+/* --- Thẻ (card) nằm trong mục nền tối (vd: trang Projects) ------------------
+   Mục .section--dark mặc định đổi h3/p sang màu sáng; thẻ card lại có nền
+   trắng nên phải đặt lại màu chữ tối để đọc được (giống thẻ ở trang chủ). */
+.section--dark .card h3 { color: var(--color-text); }
+.section--dark .card p { color: var(--color-text-muted); }
+.section--dark .card .card-link { color: var(--color-text); }
+.card-link:focus-visible { outline: none; }
