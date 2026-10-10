@@ -720,3 +720,12 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 .section--dark .card p { color: var(--color-text-muted); }
 .section--dark .card .card-link { color: var(--color-text); }
 .card-link:focus-visible { outline: none; }
+
+/* --- Tiêu đề đầu trang (page-header): xuống dòng đẹp -----------------------
+   - text-wrap: balance : chia đều chữ giữa các dòng (tránh chữ lẻ).
+   - Muốn tự chọn chỗ xuống dòng: bọc mỗi dòng trong <span class="title-line">
+     (display:block => mỗi span là một dòng riêng). Ví dụ:
+     <h1><span class="title-line">Xây dựng & Hỗ trợ</span>
+         <span class="title-line">các trường học nhỏ</span></h1>            */
+.page-header h1 { text-wrap: balance; }
+.title-line { display: block; }
