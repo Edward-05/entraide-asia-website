@@ -679,5 +679,5 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
    - max-width    : độ rộng tối đa của tiêu đề (nhỏ hơn => xuống dòng sớm hơn)
    - font-size    : cỡ chữ tiêu đề                                            */
 .story-title { max-width: 860px; margin-left: auto; margin-right: auto; font-size: clamp(2rem, 4.2vw, 3.1rem); line-height: 1.18; text-wrap: balance; }
-.story-title .title-lead { display: block; margin-bottom: 10px; color: var(--color-accent); font-size: 0.62em; letter-spacing: 0.01em; }
+.story-title .title-lead { display: block; margin-bottom: 10px; color: #fff; font-size: 0.82em; letter-spacing: 0.01em; }
 .story-title .title-rest { display: block; text-wrap: balance; }
