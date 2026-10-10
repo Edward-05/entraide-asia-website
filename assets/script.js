@@ -92,3 +92,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+/* Hero slideshow: đổi ảnh mỗi data-interval ms (mặc định 3000), fade ease-out (CSS) */
+(function () {
+  document.querySelectorAll('.hero-slides').forEach(function (box) {
+    var imgs = box.querySelectorAll('img');
+    if (imgs.length < 2) return;
+    var i = 0, ms = parseInt(box.getAttribute('data-interval'), 10) || 3000;
+    setInterval(function () {
+      imgs[i].classList.remove('is-active');
+      i = (i + 1) % imgs.length;
+      imgs[i].classList.add('is-active');
+    }, ms);
+  });
+})();

@@ -699,3 +699,16 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
    - margin       : khoảng cách phía trên/dưới câu trích                     */
 .story-quote { margin: 32px 0; padding: 6px 0 6px 24px; border-left: 4px solid var(--color-primary); font-family: var(--font-display); font-size: clamp(1.25rem, 2.4vw, 1.55rem); line-height: 1.5; max-width: 640px; text-wrap: balance; }
 .story-quote footer { margin-top: 12px; font-family: var(--font-body); font-size: 0.9rem; line-height: 1.4; color: var(--color-text-muted); text-wrap: wrap; }
+
+/* --- Hero: tiêu đề cân đối + slideshow ảnh ---------------------------------
+   - .hero h1 { text-wrap: balance } : chia đều chữ giữa các dòng, không để
+     một chữ lẻ ở dòng cuối.
+   - Slideshow: các ảnh nằm trong <div class="hero-slides" data-interval="3000">
+     (data-interval = thời gian mỗi ảnh, tính bằng mili-giây; 3000 = 3 giây).
+     --hero-fade : thời gian mờ dần chuyển ảnh, easing "ease-out".
+     Thêm/bớt ảnh: thêm/bớt thẻ <img> trong .hero-slides (ảnh đầu có class="is-active"). */
+.hero h1 { text-wrap: balance; }
+.hero-slides { position: absolute; inset: 0; --hero-fade: 1.2s; }
+.hero-slides img { position: absolute; inset: 0; opacity: 0; transform: scale(1.04); transition: opacity var(--hero-fade) ease-out, transform 4s ease-out; }
+.hero-slides img.is-active { opacity: 1; transform: scale(1); }
+@media (prefers-reduced-motion: reduce) { .hero-slides img { transition: none; transform: none; } }
