@@ -419,6 +419,14 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
   gap: 8px;
 }
 
+/* Cả thẻ (card) đều bấm được: liên kết "Xem thêm" (.card-link) được kéo giãn
+   phủ kín toàn bộ thẻ bằng ::after. Muốn TẮT tính năng này, xoá 3 dòng dưới
+   (.card { position: relative }, .card-link::after, .card:has(.card-link)). */
+.card { position: relative; }
+.card-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.card:has(.card-link) { cursor: pointer; }
+.card-link:focus-visible::after { outline: 3px solid var(--color-primary); outline-offset: -3px; border-radius: var(--radius-md); }
+
 /* progress bar for causes */
 .progress-track {
   height: 8px; border-radius: 100px; background: var(--color-bg-alt); overflow: hidden; margin: 14px 0 10px;
