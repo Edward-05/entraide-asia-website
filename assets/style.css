@@ -729,3 +729,13 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
          <span class="title-line">các trường học nhỏ</span></h1>            */
 .page-header h1 { text-wrap: balance; }
 .title-line { display: block; }
+
+/* --- Trang tài liệu (resources/*.html) -------------------------------------
+   .story-h2    : tiêu đề từng đoạn trong bài
+   .fact-num    : con số lớn trong ô "thông tin chính"
+   .update-note : khung "Đang cập nhật thêm" cuối bài (viền đứt nét, nền cam nhạt) */
+.story-h2 { font-size: 1.6rem; margin: 36px 0 12px; }
+.fact-num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 600; line-height: 1.1; color: var(--color-navy); margin-bottom: 6px; }
+.update-note { display: flex; flex-direction: column; gap: 4px; margin: 40px 0 20px; padding: 18px 22px; border: 1.5px dashed var(--color-primary); border-radius: var(--radius-md); background: rgba(251, 162, 32, 0.08); color: var(--color-text); }
+.update-note strong { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-primary-dark); }
+.update-note span { font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.55; }
