@@ -32,6 +32,21 @@
   --radius-md: 18px;
   --radius-sm: 10px;
   --container: 1180px;
+
+  /* --- SPACING (chỉnh khoảng cách giữa các mục tại đây) ----------------
+     --space-section       : khoảng cách trên/dưới của mỗi mục lớn (desktop)
+     --space-section-tight : khoảng cách của mục "tight" (mục phụ)
+     --space-section-mobile: khoảng cách mục lớn trên điện thoại
+     --space-head          : khoảng cách giữa tiêu đề mục và các thẻ bên dưới
+     --space-grid          : khoảng cách giữa các thẻ (card) với nhau
+     --space-cta           : khoảng cách trên/dưới khối banner cuối trang
+     Số càng nhỏ -> các mục càng sát nhau. */
+  --space-section: 64px;
+  --space-section-tight: 40px;
+  --space-section-mobile: 44px;
+  --space-head: 32px;
+  --space-grid: 20px;
+  --space-cta: 40px;
   --shadow-soft: 0 20px 50px -20px rgba(34, 27, 20, 0.25);
   --shadow-card: 0 12px 30px -14px rgba(34, 27, 20, 0.18);
 }
@@ -72,8 +87,9 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
   padding: 0 32px;
 }
 
-.section { padding: 110px 0; }
-.section--tight { padding: 70px 0; }
+.section { padding: var(--space-section) 0; }
+.section--tight { padding: var(--space-section-tight) 0; }
+.cta-wrap { margin: var(--space-cta) auto var(--space-section) !important; }
 .section--alt { background: var(--color-bg-alt); }
 .section--dark { background: var(--color-secondary); color: #EFEAE0; }
 .section--dark h1, .section--dark h2, .section--dark h3 { color: #fff; }
@@ -352,7 +368,7 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
   justify-content: space-between;
   align-items: flex-end;
   gap: 40px;
-  margin-bottom: 56px;
+  margin-bottom: var(--space-head);
 }
 .section-head h2 { margin-bottom: 14px; max-width: 560px; }
 .section-head p { max-width: 420px; margin: 0; }
@@ -360,7 +376,7 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 .section-head.center p { max-width: 560px; }
 
 /* --- Grids / Cards ---------------------------------------------------------- */
-.grid { display: grid; gap: 28px; }
+.grid { display: grid; gap: var(--space-grid); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
@@ -557,7 +573,7 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 .footer-social a:hover { background: rgba(4, 43, 78, 0.16); }
 
 /* --- Page header (inner pages) ------------------------------------------- */
-.page-header { padding: 70px 0 60px; text-align: center; }
+.page-header { padding: 56px 0 44px; text-align: center; }
 .page-header .eyebrow { justify-content: center; }
 .page-header .eyebrow::before { display: none; }
 .breadcrumb { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 18px; }
@@ -649,7 +665,7 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 }
 @media (max-width: 640px) {
   .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
-  .section { padding: 70px 0; }
+  .section { padding: var(--space-section-mobile) 0; }
   .container { padding: 0 20px; }
   .section-head { flex-direction: column; align-items: flex-start; }
 }
