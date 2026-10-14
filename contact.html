@@ -87,11 +87,11 @@
         <div data-reveal>
           <span class="eyebrow">Send a Message</span>
           <h2>Tell us how we can help</h2>
-          <form id="contact-form" class="form-grid" action="https://formsubmit.co/christophegoisset@yahoo.fr" method="POST" style="margin-top:26px;">
-            <input type="hidden" name="_subject" value="New message from the Entraide Asia website">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <form id="contact-form" class="form-grid" action="https://api.web3forms.com/submit" method="POST" style="margin-top:26px;">
+            <input type="hidden" name="access_key" value="f61238fb-4cf7-4358-a7f3-b17d5ddd9c44">
+            <input type="hidden" name="subject" value="New message from the Entraide Asia website">
+            <input type="hidden" name="from_name" value="Entraide Asia website">
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
             <div class="form-field">
               <label for="name">Full Name</label>
               <input type="text" id="name" name="name" placeholder="Jane Doe" required>
