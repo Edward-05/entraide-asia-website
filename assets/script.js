@@ -74,22 +74,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Basic contact form handling (demo only — no backend)
+  // Contact form: gửi qua FormSubmit (AJAX) tới email Christophe, hiện lời cảm ơn khi thành công
   const form = document.querySelector('#contact-form');
   if (form) {
-    const isFrench = document.documentElement.lang === 'fr';
-    form.addEventListener('submit', (e) => {
+    const lang = document.documentElement.lang || 'en';
+    const msg = {
+      en: { sending: 'Sending…', error: 'Sorry, the message could not be sent. Please try again or email us directly.' },
+      fr: { sending: 'Envoi…', error: "Désolé, le message n'a pas pu être envoyé. Réessayez ou écrivez-nous directement par e-mail." },
+      vi: { sending: 'Đang gửi…', error: 'Rất tiếc, tin nhắn chưa gửi được. Vui lòng thử lại hoặc gửi email trực tiếp cho chúng tôi.' },
+      th: { sending: 'กำลังส่ง…', error: 'ขออภัย ส่งข้อความไม่สำเร็จ กรุณาลองอีกครั้งหรืออีเมลถึงเราโดยตรง' }
+    }[lang] || { sending: 'Sending…', error: 'Could not send. Please try again.' };
+    const thanks = document.querySelector('#form-thanks');
+    const again = document.querySelector('#form-again');
+    let errBox = document.createElement('p');
+    errBox.setAttribute('role', 'alert');
+    errBox.style.cssText = 'color:#b3261e;margin:10px 0 0;font-size:.9rem;display:none';
+    form.appendChild(errBox);
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      if (form.querySelector('[name="_honey"]').value) return; // bot
       const btn = form.querySelector('button[type="submit"]');
       const original = btn.textContent;
-      btn.textContent = isFrench ? 'Message envoyé ✓' : 'Message sent ✓';
-      btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = original;
-        btn.disabled = false;
+      btn.textContent = msg.sending; btn.disabled = true; errBox.style.display = 'none';
+      try {
+        const res = await fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || data.success === 'false' || data.success === false) throw new Error('send failed');
+        form.hidden = true;
+        if (thanks) { thanks.hidden = false; thanks.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
         form.reset();
-      }, 2500);
+      } catch (err) {
+        errBox.textContent = msg.error; errBox.style.display = 'block';
+      } finally {
+        btn.textContent = original; btn.disabled = false;
+      }
     });
+    if (again) again.addEventListener('click', () => { thanks.hidden = true; form.hidden = false; });
   }
 });
 

@@ -778,3 +778,11 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 h1,h2,h3,h4,.eyebrow,.card h3,.info-card h3,figcaption,.gallery-credit,.update-note strong{text-wrap:balance}
 .section-head p,.page-header p,.hero p,.cta-banner p,.story-quote,.card-body p,.info-card p,.section p,p{text-wrap:pretty}
 .section-head p,.page-header p,.hero p,.cta-banner p,.story-quote{text-wrap:balance}
+
+/* ===== LỜI CẢM ƠN SAU KHI GỬI FORM (contact) ===== */
+.form-thanks{margin-top:26px;padding:36px 28px;background:#fff;border-radius:var(--radius-lg,16px);box-shadow:0 8px 30px rgba(15,42,74,.08);text-align:center}
+.form-thanks[hidden]{display:none}
+.form-thanks-icon{width:56px;height:56px;margin:0 auto 14px;border-radius:50%;background:#e6f4ea;color:#1e7a3c;font-size:28px;line-height:56px;font-weight:700}
+.form-thanks h3{margin:0 0 8px}
+.form-thanks p{margin:0 0 18px;color:var(--color-text-muted,#667)}
+#contact-form[hidden]{display:none !important}
