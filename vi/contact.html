@@ -68,7 +68,7 @@
           <div class="icon">✉</div>
           <h3>Gửi Email</h3>
           <p>Các câu hỏi chung và thông tin về chương trình.</p>
-          <strong>hello@entraide.org</strong>
+          <strong><a href="mailto:christophegoisset@yahoo.fr" style="color:inherit;">christophegoisset@yahoo.fr</a></strong>
         </div>
         <div class="info-card">
           <div class="icon">☎</div>
@@ -88,7 +88,11 @@
         <div data-reveal>
           <span class="eyebrow">Gửi tin nhắn</span>
           <h2>Hãy cho chúng tôi biết chúng tôi có thể giúp gì</h2>
-          <form id="contact-form" class="form-grid" style="margin-top:26px;">
+          <form id="contact-form" class="form-grid" action="https://formsubmit.co/christophegoisset@yahoo.fr" method="POST" style="margin-top:26px;">
+            <input type="hidden" name="_subject" value="Tin nhắn mới từ website Entraide Asia">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
             <div class="form-field">
               <label for="name">Họ và tên</label>
               <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
@@ -114,6 +118,12 @@
               <button type="submit" class="btn btn-primary" style="width:100%;">Gửi tin nhắn</button>
             </div>
           </form>
+          <div class="form-thanks" id="form-thanks" role="status" aria-live="polite" hidden>
+            <div class="form-thanks-icon">✓</div>
+            <h3>Cảm ơn bạn!</h3>
+            <p>Tin nhắn của bạn đã được gửi. Chúng tôi sẽ phản hồi sớm nhất có thể.</p>
+            <button type="button" class="btn btn-dark" id="form-again">Gửi tin nhắn khác</button>
+          </div>
         </div>
         <div class="split-media" data-reveal>
           <img src="https://picsum.photos/seed/contact-team/700/720" alt="Đội ngũ Entraide tại văn phòng">
