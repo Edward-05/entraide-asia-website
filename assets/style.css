@@ -770,3 +770,11 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
 /* Chữ phụ trên nền tối (mục video / lễ kết thúc năm học) */
 .section--dark .gallery figcaption,.section--dark .video-grid figcaption,.section--dark .gallery-credit{color:#C9DAD5}
 .section--dark .section-head p{color:#C9DAD5}
+
+/* ===== CHỐNG CHỮ CÔ ĐƠN XUỐNG DÒNG (toàn site) =====
+   text-wrap: balance  -> tiêu đề/đoạn ngắn: chia đều các dòng.
+   text-wrap: pretty   -> đoạn văn dài: tránh dòng cuối chỉ có 1 chữ.
+   Muốn tắt: đổi thành "wrap". */
+h1,h2,h3,h4,.eyebrow,.card h3,.info-card h3,figcaption,.gallery-credit,.update-note strong{text-wrap:balance}
+.section-head p,.page-header p,.hero p,.cta-banner p,.story-quote,.card-body p,.info-card p,.section p,p{text-wrap:pretty}
+.section-head p,.page-header p,.hero p,.cta-banner p,.story-quote{text-wrap:balance}
