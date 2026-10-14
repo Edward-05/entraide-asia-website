@@ -92,18 +92,18 @@ document.addEventListener('DOMContentLoaded', () => {
     form.appendChild(errBox);
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      if (form.querySelector('[name="_honey"]').value) return; // bot
+      if (form.querySelector('[name="botcheck"]').checked) return; // bot
       const btn = form.querySelector('button[type="submit"]');
       const original = btn.textContent;
       btn.textContent = msg.sending; btn.disabled = true; errBox.style.display = 'none';
       try {
-        const res = await fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+        const res = await fetch(form.action, {
           method: 'POST',
           headers: { 'Accept': 'application/json' },
           body: new FormData(form)
         });
         const data = await res.json().catch(() => ({}));
-        if (!res.ok || data.success === 'false' || data.success === false) throw new Error('send failed');
+        if (!res.ok || data.success !== true) throw new Error('send failed');
         form.hidden = true;
         if (thanks) { thanks.hidden = false; thanks.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
         form.reset();
