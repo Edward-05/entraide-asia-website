@@ -67,7 +67,7 @@
           <div class="icon">✉</div>
           <h3>Email Us</h3>
           <p>General inquiries and program information.</p>
-          <strong>hello@entraide.org</strong>
+          <strong><a href="mailto:christophegoisset@yahoo.fr" style="color:inherit;">christophegoisset@yahoo.fr</a></strong>
         </div>
         <div class="info-card">
           <div class="icon">☎</div>
@@ -87,7 +87,11 @@
         <div data-reveal>
           <span class="eyebrow">Send a Message</span>
           <h2>Tell us how we can help</h2>
-          <form id="contact-form" class="form-grid" style="margin-top:26px;">
+          <form id="contact-form" class="form-grid" action="https://formsubmit.co/christophegoisset@yahoo.fr" method="POST" style="margin-top:26px;">
+            <input type="hidden" name="_subject" value="New message from the Entraide Asia website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
             <div class="form-field">
               <label for="name">Full Name</label>
               <input type="text" id="name" name="name" placeholder="Jane Doe" required>
@@ -113,6 +117,12 @@
               <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
             </div>
           </form>
+          <div class="form-thanks" id="form-thanks" role="status" aria-live="polite" hidden>
+            <div class="form-thanks-icon">✓</div>
+            <h3>Thank you!</h3>
+            <p>Your message has been sent. We will get back to you as soon as we can.</p>
+            <button type="button" class="btn btn-dark" id="form-again">Send another message</button>
+          </div>
         </div>
         <div class="split-media" data-reveal>
           <img src="https://picsum.photos/seed/contact-team/700/720" alt="Entraide team at the office">
