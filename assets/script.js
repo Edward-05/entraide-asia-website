@@ -106,3 +106,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }, ms);
   });
 })();
+
+/* ===== Chống chữ cô đơn: nối 2 từ cuối của mỗi đoạn/tiêu đề bằng khoảng trắng không ngắt =====
+   Tắt: xoá khối này. Chỉnh phạm vi: sửa selector bên dưới. */
+(function(){
+  function fix(root){
+    var els=root.querySelectorAll('p,h1,h2,h3,h4,figcaption,.eyebrow,.card-link');
+    els.forEach(function(el){
+      var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),n,last=null;
+      while((n=w.nextNode())){ if(n.textContent.trim()) last=n; }
+      if(!last) return;
+      if(el.textContent.trim().split(/\s+/).length<4) return;
+      var t=last.textContent.replace(/\s+$/,''), tail=last.textContent.slice(t.length);
+      var i=t.lastIndexOf(' ');
+      if(i>0) last.textContent=t.slice(0,i)+' '+t.slice(i+1)+tail;
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',function(){fix(document)}); else fix(document);
+})();
