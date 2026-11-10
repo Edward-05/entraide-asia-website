@@ -819,3 +819,12 @@ h1,h2,h3,h4,.eyebrow,.card h3,.info-card h3,figcaption,.gallery-credit,.update-n
 .partner-card p{flex:1 1 auto}
 
 .partner-grid{grid-auto-rows:1fr}
+
+/* ===== HOVER TRANG ĐỐI TÁC — đồng bộ với .card và .btn toàn site ==========
+   Box: nâng lên 6px + đổ bóng mềm (giống .card). Nút: nền navy thương hiệu,
+   chữ trắng (giống .btn-dark / filter-tabs).                                  */
+.partner-card{transition:transform .25s ease,box-shadow .25s ease}
+.partner-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-soft)}
+.partner-btn{color:var(--color-navy);border-color:var(--color-navy)}
+.partner-btn:hover,.partner-btn:focus-visible{background:var(--color-navy);border-color:var(--color-navy);color:#fff;transform:translateY(-2px)}
+.partner-btn:focus-visible{outline:3px solid var(--color-primary);outline-offset:2px}
