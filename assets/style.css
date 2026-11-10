@@ -628,7 +628,6 @@ p { margin: 0 0 1em; color: var(--color-text-muted); }
   .nav-actions { gap: 8px; }
   .nav-actions .btn-primary { display: none; }
   .lang-toggle { padding: 8px 10px; font-size: 0.78rem; }
-  .lang-toggle .lang-label { display: none; }
   .lang-dropdown { min-width: 150px; }
   .nav-links {
     display: none;
@@ -828,3 +827,13 @@ h1,h2,h3,h4,.eyebrow,.card h3,.info-card h3,figcaption,.gallery-credit,.update-n
 .partner-btn{color:var(--color-navy);border-color:var(--color-navy)}
 .partner-btn:hover,.partner-btn:focus-visible{background:var(--color-navy);border-color:var(--color-navy);color:#fff;transform:translateY(-2px)}
 .partner-btn:focus-visible{outline:3px solid var(--color-primary);outline-offset:2px}
+
+/* ===== CỜ NGÔN NGỮ (SVG, hiển thị giống nhau trên mọi hệ điều hành) =========
+   Không dùng emoji cờ vì Windows không hiển thị (chỉ thấy chữ VN/FR...).
+   Cờ nằm ở assets/img/flags/*.svg. Chỉnh kích thước tại .flag bên dưới.      */
+.lang-toggle{gap:8px;padding:8px 12px;border-color:#cdbfa8;background:#fff}
+.lang-toggle .flag,.lang-option .flag{width:24px;height:16px;border-radius:3px;object-fit:cover;flex:none;display:block;box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+.lang-toggle .lang-label{display:inline;font-size:.82rem;letter-spacing:.03em}
+.lang-toggle .caret{font-size:.6rem;opacity:.8}
+.lang-option{gap:12px}
+@media(max-width:980px){.lang-toggle{padding:7px 10px;gap:6px}.lang-toggle .lang-label{display:inline;font-size:.78rem}.lang-dropdown{min-width:170px}}
