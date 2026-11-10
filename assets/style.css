@@ -808,9 +808,10 @@ h1,h2,h3,h4,.eyebrow,.card h3,.info-card h3,figcaption,.gallery-credit,.update-n
    - Khung logo cố định cùng kích thước (--partner-logo-h) cho mọi box.
    - Các box cùng chiều cao (grid stretch), nút luôn nằm đáy box.
    - Số cột: >=1180px: 4 cột | 641-1179px: 2 cột | <=640px: 1 cột.           */
-.partner-grid{grid-template-columns:repeat(2,1fr);align-items:stretch}
-@media(min-width:1180px){.partner-grid{grid-template-columns:repeat(4,1fr)}.partner-card h3{min-height:2.6em}}
-@media(max-width:640px){.partner-grid{grid-template-columns:1fr}}
+.partner-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+@media(min-width:1180px){.partner-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.partner-card h3{min-height:2.6em}}
+@media(max-width:640px){.partner-grid{grid-template-columns:minmax(0,1fr)}}
+.partner-card{min-width:0}.partner-card h3,.partner-card p{overflow-wrap:anywhere}
 .partner-card{--partner-logo-h:96px;align-items:stretch;height:100%}
 .partner-logo{width:100%;height:var(--partner-logo-h);display:flex;align-items:center;justify-content:center;background:#FBF7EF;border-radius:14px;padding:14px 18px;margin-bottom:20px}
 .partner-logo img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
